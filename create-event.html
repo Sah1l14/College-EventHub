@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Event | College EventHub</title>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+<body data-page="create-event">
+  <div class="app-shell">
+    <header class="topbar"><div class="brand-wrap"><div class="brand-badge">CE</div><div class="brand-name">College EventHub</div></div><nav class="nav-links"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a></nav></header>
+    <main class="section">
+      <section class="glass-card form-shell">
+        <h1>Create Event</h1>
+        <form id="createEventForm" class="form-grid two-col">
+          <label>Title<input name="title" required /></label>
+          <label>Category<select name="category"><option>Workshop</option><option>Festival</option><option>Conference</option><option>Competition</option></select></label>
+          <label>Date<input type="date" name="date" required /></label>
+          <label>Time<input type="time" name="time" required /></label>
+          <label>Venue<input name="venue" required /></label>
+          <label>Organizer<input name="organizer" required /></label>
+          <label>Max Participants<input type="number" name="maxParticipants" required /></label>
+          <label>Registration Deadline<input type="date" name="registrationDeadline" required /></label>
+          <label>Contact Information<input name="contactInformation" required /></label>
+          <label>Banner Image URL<input name="bannerImage" id="bannerImage" /></label>
+          <label class="full-width">Description<textarea name="description" rows="4" required></textarea></label>
+          <label class="full-width">Event Rules<textarea name="rules" rows="3"></textarea></label>
+          <button type="submit" class="btn btn-primary">Publish Event</button>
+          <button type="button" class="btn btn-secondary" id="saveDraftBtn">Save Draft</button>
+        </form>
+      </section>
+    </main>
+    <div id="toastHost"></div>
+  </div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

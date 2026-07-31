@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | College EventHub</title>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/dashboard.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+<body data-page="admin">
+  <div class="app-shell">
+    <header class="topbar"><div class="brand-wrap"><div class="brand-badge">CE</div><div class="brand-name">College EventHub</div></div><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a href="events.html">Events</a></nav></header>
+    <main class="section">
+      <div class="section-head"><h1>Admin Dashboard</h1><a href="create-event.html" class="btn btn-primary">Create Event</a></div>
+      <div id="adminStats" class="stats-grid"></div>
+      <div class="card-grid two-up">
+        <article class="glass-card"><h3>Manage Users</h3><div id="adminUsers"></div></article>
+        <article class="glass-card"><h3>Manage Events</h3><div id="adminEvents"></div></article>
+      </div>
+      <div class="card-grid two-up">
+        <article class="glass-card"><h3>Feedback Moderation</h3><div id="adminFeedback"></div></article>
+        <article class="glass-card"><h3>Activity Log</h3><div id="adminActivity"></div></article>
+      </div>
+    </main>
+    <div id="toastHost"></div>
+  </div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

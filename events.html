@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Events | College EventHub</title>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/dashboard.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+<body data-page="events">
+  <div class="app-shell">
+    <header class="topbar"><div class="brand-wrap"><div class="brand-badge">CE</div><div class="brand-name">College EventHub</div></div><button class="menu-toggle" id="menuToggle">☰</button><nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="events.html">Events</a><a href="dashboard.html">Dashboard</a><a href="admin.html">Admin</a></nav></header>
+    <main class="section">
+      <div class="section-head"><h1>Discover events</h1><a class="btn btn-primary" href="create-event.html">Create Event</a></div>
+      <div class="toolbar glass-card">
+        <input id="searchEvents" type="search" placeholder="Search events" />
+        <select id="categoryFilter"><option value="all">All Categories</option></select>
+        <select id="sortFilter"><option value="date">Sort by date</option><option value="popular">Popular</option><option value="featured">Featured</option></select>
+      </div>
+      <div id="eventList" class="card-grid three-up"></div>
+      <div id="pagination" class="pagination"></div>
+    </main>
+    <div id="toastHost"></div>
+  </div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

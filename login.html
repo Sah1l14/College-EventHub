@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | College EventHub</title>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+<body data-page="login">
+  <div class="app-shell">
+    <header class="topbar simple-topbar">
+      <div class="brand-wrap">
+        <div class="brand-badge">CE</div>
+        <div class="brand-name">College EventHub</div>
+      </div>
+      <nav class="nav-links"><a href="index.html">Home</a><a href="events.html">Events</a></nav>
+    </header>
+    <main class="auth-layout">
+      <section class="auth-card glass-card">
+        <div class="auth-header">
+          <div class="eyebrow">Welcome back</div>
+          <h1>Login to your workspace</h1>
+        </div>
+        <form id="loginForm" class="form-grid">
+          <label>Email<input id="loginEmail" type="email" required /></label>
+          <label>Password<div class="password-field"><input id="loginPassword" type="password" required /><button type="button" class="ghost-btn" data-toggle-password="loginPassword">Show</button></div></label>
+          <label class="checkbox-line"><input type="checkbox" id="rememberMe" />Remember me</label>
+          <button type="submit" class="btn btn-primary full">Login</button>
+        </form>
+        <p class="auth-footer">Need an account? <a href="register.html">Register here</a></p>
+      </section>
+    </main>
+    <div id="toastHost"></div>
+  </div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

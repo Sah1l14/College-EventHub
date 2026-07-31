@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College EventHub</title>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/dashboard.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+<body data-page="home">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-badge">CE</div>
+        <div>
+          <div class="brand-name">College EventHub</div>
+          <div class="brand-subtitle">Premium campus event portal</div>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="events.html">All Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-primary">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-grid">
+        <div>
+          <div class="eyebrow">Connected campus experiences</div>
+          <h1>Run, join, and celebrate college events in one premium platform.</h1>
+          <p>Manage registrations, attendance, certificates, and feedback from a single secure dashboard with persistent local storage.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="register.html">Create Account</a>
+            <a class="btn btn-secondary" href="events.html">Explore Events</a>
+          </div>
+          <div class="stats-row">
+            <div class="stat-chip"><strong id="homeEventsCount">0</strong><span>Events</span></div>
+            <div class="stat-chip"><strong id="homeUsersCount">0</strong><span>Members</span></div>
+            <div class="stat-chip"><strong id="homeCertsCount">0</strong><span>Certificates</span></div>
+          </div>
+        </div>
+        <div class="glass-card hero-panel">
+          <div class="mini-grid">
+            <div class="mini-card accent">Trending</div>
+            <div class="mini-card">Live Registrations</div>
+          </div>
+          <div class="hero-calendar">
+            <div class="calendar-pill">Upcoming</div>
+            <div class="hero-lists" id="featuredList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Why colleges choose EventHub</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="glass-card feature-card">
+            <h3>Event Lifecycle</h3>
+            <p>Create, publish, archive, and manage a complete event journey with approval-ready workflows.</p>
+          </article>
+          <article class="glass-card feature-card">
+            <h3>Smart Attendance</h3>
+            <p>Issue unique participant codes and unlock certificates automatically after attendance is marked.</p>
+          </article>
+          <article class="glass-card feature-card">
+            <h3>Community Feedback</h3>
+            <p>Rate events, leave contextual reviews, and moderate the experience with real-time insights.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div id="toastHost"></div>
+  </div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

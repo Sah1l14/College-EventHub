@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | College EventHub</title>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+<body data-page="register">
+  <div class="app-shell">
+    <header class="topbar simple-topbar">
+      <div class="brand-wrap">
+        <div class="brand-badge">CE</div>
+        <div class="brand-name">College EventHub</div>
+      </div>
+      <nav class="nav-links"><a href="index.html">Home</a><a href="events.html">Events</a></nav>
+    </header>
+    <main class="auth-layout">
+      <section class="auth-card glass-card wide-auth">
+        <div class="auth-header">
+          <div class="eyebrow">Join the campus network</div>
+          <h1>Create a premium account</h1>
+        </div>
+        <form id="registerForm" class="form-grid two-col">
+          <label>Name<input id="registerName" type="text" required /></label>
+          <label>Email<input id="registerEmail" type="email" required /></label>
+          <label>Phone<input id="registerPhone" type="tel" required /></label>
+          <label>Role<select id="registerRole"><option value="student">Student</option><option value="admin">Admin</option></select></label>
+          <label>Password<div class="password-field"><input id="registerPassword" type="password" required /><button type="button" class="ghost-btn" data-toggle-password="registerPassword">Show</button></div></label>
+          <label>Confirm Password<input id="registerConfirmPassword" type="password" required /></label>
+          <div class="strength-line"><span id="passwordStrength">Password strength: weak</span></div>
+          <button type="submit" class="btn btn-primary full">Create Account</button>
+        </form>
+        <p class="auth-footer">Already registered? <a href="login.html">Login</a></p>
+      </section>
+    </main>
+    <div id="toastHost"></div>
+  </div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | College EventHub</title>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/variables.css" />
+  <link rel="stylesheet" href="./assets/css/layout.css" />
+  <link rel="stylesheet" href="./assets/css/components.css" />
+  <link rel="stylesheet" href="./assets/css/dashboard.css" />
+  <link rel="stylesheet" href="./assets/css/forms.css" />
+  <link rel="stylesheet" href="./assets/css/animations.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+<body data-page="dashboard">
+  <div class="app-shell">
+    <header class="topbar"> <div class="brand-wrap"><div class="brand-badge">CE</div><div class="brand-name">College EventHub</div></div><button class="menu-toggle" id="menuToggle">☰</button><nav class="nav-links" id="navLinks"><a href="dashboard.html">Dashboard</a><a href="events.html">Events</a><a href="profile.html">Profile</a><a href="settings.html">Settings</a><button class="btn btn-secondary" id="logoutBtn">Logout</button></nav></header>
+    <main class="dashboard-layout">
+      <aside class="sidebar glass-card">
+        <div class="sidebar-section">
+          <div class="profile-pill" id="userProfilePill"></div>
+        </div>
+        <nav class="side-links"><a href="dashboard.html">Dashboard</a><a href="my-events.html">My Events</a><a href="joined-events.html">Joined Events</a><a href="attendance.html">Attendance</a><a href="certificates.html">Certificates</a><a href="gallery.html">Gallery</a><a href="feedback.html">Feedback</a><a href="admin.html">Admin</a></nav>
+      </aside>
+      <section class="dashboard-main">
+        <div class="stats-grid" id="statsGrid"></div>
+        <div class="card-grid two-up">
+          <article class="glass-card"><h3>Upcoming Events</h3><div id="upcomingList"></div></article>
+          <article class="glass-card"><h3>Recent Activity</h3><div id="activityList"></div></article>
+        </div>
+        <div class="card-grid two-up">
+          <article class="glass-card"><h3>Notifications</h3><div id="notificationList"></div></article>
+          <article class="glass-card"><h3>Certificates & Attendance</h3><div id="certSummary"></div></article>
+        </div>
+      </section>
+    </main>
+    <div id="toastHost"></div>
+  </div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
